@@ -6,7 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
 
-    android:background="#C8F6C9">
+    android:background="@drawable/gradient">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/girl"
+        android:scaleType="fitStart"
+        >
+
+    </ImageView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@drawable/gradient"
+        >
+
+    </View>
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -52,7 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="user"
-            android:maxLines="1">
+            android:maxLines="1"
+            android:background="@color/whitealpha"
+            >
 
         </EditText>
 
