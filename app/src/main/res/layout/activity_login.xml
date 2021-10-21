@@ -110,7 +110,12 @@
         app:layout_constraintStart_toStartOf="@+id/guideline1"
 
         app:layout_constraintTop_toBottomOf="@+id/til2"
-        style="@style/mybutton" />
+
+        android:backgroundTint="@color/button_custom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/teal_200" />
 
     <TextView
         android:id="@+id/signup_text"
