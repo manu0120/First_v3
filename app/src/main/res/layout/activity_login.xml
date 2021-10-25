@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
 
-    android:onClick="onClick"
+
     tools:context=".LoginActivity">
 
     <ImageView
+        android:id="@+id/girl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
-        android:src="@drawable/girl">
 
+        >
+        <!-- android:src="@drawable/girl" -->
     </ImageView>
 
     <View
@@ -46,7 +48,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="56dp"
 
-        android:src="@mipmap/ic_logo_foreground"
+        android:src="@drawable/ic_fan"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -94,7 +96,7 @@
             android:hint="password"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:onClick="onClick">
+            >
 
         </EditText>
 
@@ -108,13 +110,23 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/button_custom"
 
-        android:onClick="onClick"
+        android:onClick="openMain"
 
         android:text="BUTTON"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/til2" />
+
+    <Button
+        android:id="@+id/button2"
+
+        style="@style/buttonreverse"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/button" />
 
     <TextView
         android:id="@+id/signup_text"
@@ -132,16 +144,6 @@
 
 
         app:layout_constraintTop_toBottomOf="@id/button2" />
-
-    <Button
-        android:id="@+id/button2"
-
-        style="@style/buttonreverse"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
-
-        app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
