@@ -27,19 +27,28 @@ public class LoginActivity extends AppCompatActivity {
     ImageView mGirl=findViewById(R.id.girl);
 
     Glide.with(this)
-            .load("https://images.unsplash.com/photo-1634733741165-685d61c6a206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80")
-            //.load(R.drawable.girl)
+            //load("https://images.unsplash.com/photo-1634733741165-685d61c6a206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80")
+            .load(R.drawable.girl)
             .transition(DrawableTransitionOptions.withCrossFade(2000))
             //.centerCrop()
             //.circleCrop()
 
             .into(mGirl);
     }
-
+    /*
     public void onClick(View v) {
         Intent intent=new Intent (LoginActivity.this, MainActivity.class);
         startActivity(intent);
     }
+
+     */
+    /*
+    public void onClick2(View v) {
+        Intent intent=new Intent (LoginActivity.this, Signup.class);
+        startActivity(intent);
+    }
+    */
+
 
     public void openMain(View v){
         Intent intent=new Intent(LoginActivity.this, MainActivity.class);
@@ -52,4 +61,6 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent=new Intent(LoginActivity.this,Signup.class);
         startActivity(intent);
     }
+
+
 }
