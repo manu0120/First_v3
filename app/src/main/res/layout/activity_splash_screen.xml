@@ -15,7 +15,7 @@
     </View>
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/logosplash"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="56dp"
