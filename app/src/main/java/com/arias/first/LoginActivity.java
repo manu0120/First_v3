@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -22,6 +24,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+    //animacion llamada
+        ImageView fan2 = (ImageView) findViewById(R.id.logologin);
+        Animation myanim2= AnimationUtils.loadAnimation(this, R.anim.fadein_login);
+        fan2.startAnimation(myanim2);
 
     //glide for loading girls
     ImageView mGirl=findViewById(R.id.girl);
