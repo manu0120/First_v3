@@ -16,6 +16,11 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+/**
+ * @author Manuel Arias Mateos
+ * estoy trabajando en ello
+ *
+ */
 public class splash_screen extends AppCompatActivity {
 
     @Override
