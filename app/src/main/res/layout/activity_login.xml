@@ -77,13 +77,14 @@
         </EditText>
 
     </com.google.android.material.textfield.TextInputLayout>
-
+    <!-- antes puse esta propiedad dentro de TextInputLayout:
+    app:boxBackgroundColor="#fff0cc" -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        app:boxBackgroundColor="#fff0cc"
+
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/til1"
@@ -94,6 +95,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#fff0cc"
             android:hint="password"
             android:inputType="textPassword"
             android:maxLines="1"
