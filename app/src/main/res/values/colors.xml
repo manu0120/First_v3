@@ -11,6 +11,7 @@
 
     <color name="fucsia">#FFE91E69</color>
     <color name="purple">#FFC29FFF</color>
+    <!-- creo que es transparente -->
     <color name="whitealpha">#00FFFFFF</color>
     <color name="tilwhite">#4DE1F2FF</color>
 </resources>
