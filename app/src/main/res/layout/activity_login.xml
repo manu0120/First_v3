@@ -16,7 +16,7 @@
         android:scaleType="fitStart"
 
         >
-        <!-- Comnentario prueba,  -->
+        <!-- Comnentario prueba, 2  -->
         <!-- android:src="@drawable/girl" -->
     </ImageView>
 
