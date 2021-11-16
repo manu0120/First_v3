@@ -20,7 +20,7 @@
         <item name="background">@color/fucsia_200</item>
     </style>
     <style name="noActionTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:statusBarColor" tools:targetApi="l">@colro/cyan</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/cyan</item>
 
     </style>
 </resources>
