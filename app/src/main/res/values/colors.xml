@@ -14,4 +14,7 @@
     <!-- creo que es transparente -->
     <color name="whitealpha">#00FFFFFF</color>
     <color name="tilwhite">#4DE1F2FF</color>
+    <!-- color name="yellow_login">#fff0cc</color> -->
+    <color name="yellow_login">#88fff0cc</color>
+
 </resources>
