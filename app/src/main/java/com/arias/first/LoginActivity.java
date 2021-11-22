@@ -35,9 +35,10 @@ public class LoginActivity extends AppCompatActivity {
 
     Glide.with(this)
             //load("https://images.unsplash.com/photo-1634733741165-685d61c6a206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=730&q=80")
-            .load(R.drawable.girl)
+            //.load(R.drawable.girl)
+            .load(R.drawable.sea_login2)
             .transition(DrawableTransitionOptions.withCrossFade(2000))
-            //.centerCrop()
+            .centerCrop()
             //.circleCrop()
 
             .into(mGirl);
@@ -59,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void openMain(View v){
         Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+        /*Si le das atrás en el main, te saca de la aplicaion (se vacia la pila)*/
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);

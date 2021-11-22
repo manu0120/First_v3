@@ -17,4 +17,6 @@
     <!-- color name="yellow_login">#fff0cc</color> -->
     <color name="yellow_login">#88fff0cc</color>
     <color name="cyan">#7ACAFF</color>
+    <color name="transparent">#00000000</color>
+
 </resources>
