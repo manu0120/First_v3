@@ -1,10 +1,13 @@
 package com.arias.first;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -15,6 +18,7 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +44,56 @@ public class MainActivity extends AppCompatActivity {
         miVisorWeb=(WebView) findViewById(R.id.vistaweb);
         miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
+    }
+
+    public void showAlertDialogButtonClicked(MainActivity mainActivity){
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+     //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.ic_settings);
+        builder.setCancelable(false);
+
+        // un XML a medida para el diálogo
+//        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        // add the buttons
+        builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(MainActivity.this, Signup.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
     }
 
     protected SwipeRefreshLayout.OnRefreshListener
@@ -111,10 +165,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //metodo que le da vida a las entradas de menú
     public boolean onOptionsItemSelected(MenuItem item){
-
-
-
         int id=item.getItemId();
 
         if (id == R.id.item1) {
@@ -125,6 +177,9 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.item2) {
             Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
             toast.show();
+        }
+        if (id == R.id.item4){
+            showAlertDialogButtonClicked(MainActivity.this);
         }
         return super.onOptionsItemSelected(item);
 

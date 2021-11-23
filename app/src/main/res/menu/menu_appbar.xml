@@ -12,6 +12,8 @@
         android:icon="@drawable/ic_settings"
         app:showAsAction="ifRoom|withText" />
 
+    <!-- Los dos item ultimos se muestran en el menu overflow ya que android determina
+    que no hay mas espacio en la barra-->
     <item
         android:id="@+id/item3"
         android:title="About us"
