@@ -115,7 +115,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonReg"
 
         style="@style/buttonreversesignup"
         android:text="Register"

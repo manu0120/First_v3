@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -19,11 +21,14 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class LoginActivity extends AppCompatActivity {
 
+
     @Override
     //metodo que crea el login con su contenido y su vista
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
 
     //animacion llamada
         ImageView fan2 = (ImageView) findViewById(R.id.logologin);
@@ -70,4 +75,6 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent=new Intent(LoginActivity.this,Signup.class);
         startActivity(intent);
     }
+
+
 }
