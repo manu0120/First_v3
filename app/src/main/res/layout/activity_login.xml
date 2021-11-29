@@ -52,28 +52,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/linear"
-        android:orientation="vertical"
-        android:background="@color/yellow_login"
 
-        app:layout_constraintTop_toBottomOf="@id/logologin"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til1"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
 
-            app:startIconDrawable="@drawable/ic_account_foreground">
-<!--            android:layout_marginTop="200dp"-->
-<!--            app:layout_constraintEnd_toEndOf="@id/guideline2"-->
-<!--            app:layout_constraintStart_toStartOf="@id/guideline1"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
+            app:startIconDrawable="@drawable/ic_account_foreground"
+            android:layout_marginTop="200dp"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            >
 
 
 
@@ -81,13 +73,15 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:alpha="0"
+                android:background="@color/yellow_login"
+                android:alpha="0.4"
                 android:inputType="textPersonName"
 
                 android:hint="user"
                 android:maxLines="1">
 
             </EditText>
+            <!--                android:alpha="0.4"-->
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -100,25 +94,25 @@
 
 
             app:passwordToggleEnabled="true"
-            app:startIconDrawable="@drawable/ic_lock_foreground">
-<!--            app:layout_constraintEnd_toEndOf="@id/guideline2"-->
-<!--            app:layout_constraintStart_toStartOf="@id/guideline1"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/til1"-->
-
+            app:startIconDrawable="@drawable/ic_lock_foreground"
+            app:layout_constraintEnd_toEndOf="@id/guideline2"
+            app:layout_constraintStart_toStartOf="@id/guideline1"
+            app:layout_constraintTop_toBottomOf="@+id/til1"
+            >
             <EditText
-                android:alpha="0"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/yellow_login"
+                android:alpha="0.4"
                 android:hint="password"
                 android:inputType="textPassword"
-                android:maxLines="1"
-                >
-
+                android:maxLines="1">
             </EditText>
 
         </com.google.android.material.textfield.TextInputLayout>
 
-    </LinearLayout>
+
     <!-- whitealpha: Hace que el color sea transparente -->
     <!--android:background="@color/whitealpha"
     Estaba puesto dentro del editText-->
@@ -138,7 +132,7 @@
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/linear" />
+        app:layout_constraintTop_toBottomOf="@+id/til2" />
 
     <Button
         android:id="@+id/button2"
