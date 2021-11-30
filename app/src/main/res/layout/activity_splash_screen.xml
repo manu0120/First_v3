@@ -46,6 +46,7 @@
         android:layout_marginTop="18dp"
 
         android:text="TIME CONTROLLER"
+        android:fontFamily="@font/notosans"
         android:textColor="@color/black"
         android:textSize="17sp"
         android:textStyle="italic"
