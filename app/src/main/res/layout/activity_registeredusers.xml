@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sky_users"
+        android:scaleType="centerCrop"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd1"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="50dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteY="43dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start"
+
+            android:src="@drawable/alba">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:layout_marginRight="35dp"
+            android:fontFamily="@font/notosans_bold"
+
+            android:text="Nombre: Alba Perez García.\n Edad: 18 años\n Nacionalidad: España.\nCalle: Calle Anoeta"
+            android:layout_gravity="end"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd2"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="50dp"
+
+
+        app:layout_constraintTop_toBottomOf="@id/cd1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteY="43dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="10dp"
+
+            android:src="@drawable/antonio">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+
+            android:fontFamily="@font/notosans_bold"
+            android:text="Nombre: Antonio Gonzalez.\n Edad: 28 años\n Nacionalidad: España.\nCalle: Calle Alcocer" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

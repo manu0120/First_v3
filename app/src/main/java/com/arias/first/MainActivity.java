@@ -11,11 +11,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -44,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         miVisorWeb=(WebView) findViewById(R.id.vistaweb);
         miVisorWeb.getSettings().setBuiltInZoomControls(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
+
     }
 
     public void showAlertDialogButtonClicked(MainActivity mainActivity){
@@ -70,11 +69,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("Login", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
                 // do something like...
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
 
                 dialog.dismiss();
             }
@@ -180,6 +181,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if (id == R.id.item4){
             showAlertDialogButtonClicked(MainActivity.this);
+        }
+        if (id == R.id.item5){
+            Intent intent = new Intent(MainActivity.this, Registered_users.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
 

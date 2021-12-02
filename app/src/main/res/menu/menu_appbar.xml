@@ -25,4 +25,9 @@
         android:title="Signout"
 
         app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/item5"
+        android:title="Registered users"
+
+        app:showAsAction="ifRoom|withText" />
 </menu>
