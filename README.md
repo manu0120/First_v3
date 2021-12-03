@@ -21,6 +21,7 @@ El aspecto que tiene es el siguiente:
 
 ### Signup
 Esta activity tiene el siguiente aspecto:
+
 ![SignUp](img/register.PNG)
 
 ### Main
@@ -33,6 +34,7 @@ El menú de la barra de arriba (appbar) ha sido diseñado en menu_appbar.xml. Es
 en MainActivity.java a traves del método "onCreateOptionsMenu"
 
 [Código Java](https://github.com/manu0120/First_v3/blob/testConstraintLayout/app/src/main/java/com/arias/first/MainActivity.java)
+[Código XML Menu appbar](https://github.com/manu0120/First_v3/blob/testConstraintLayout/app/src/main/res/menu/menu_appbar.xml)
 
 Las funcionalidades de este menú se pueden ver en este video:
 
@@ -43,3 +45,10 @@ Esta ventana tiene como base un ConstraintLayout, que a su vez contiene varios C
 los que se han añadido un ImageView y TextView
 
 ![Registered_Users](img/registered_users.PNG)
+
+### Colaboracion
+
+En la siguiente foto se puede ver como otro compañero ha colaborado en mi proyecto para
+mejorar las animaciones.
+
+![Colaboracion](img/colaboracion.PNG)
