@@ -183,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
             showAlertDialogButtonClicked(MainActivity.this);
         }
         if (id == R.id.item5){
-            Intent intent = new Intent(MainActivity.this, Registered_users.class);
+            Intent intent = new Intent(MainActivity.this, Registeredusers.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

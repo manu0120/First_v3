@@ -3,6 +3,7 @@
     package="com.arias.first">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_extractor"
@@ -11,13 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.First">
         <activity
+            android:name=".Registeredusers"
+            android:exported="false" />
+        <activity
             android:name=".Signup"
             android:exported="true"
-            android:parentActivityName=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
         <activity
             android:name=".splash_screen"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,16 +34,8 @@
             android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/noActionTheme">
-            <!--    android:theme="@style/noActionTheme: quita la action bar/app bar -->
 
-
-        </activity>
-        <activity
-            android:name=".Registered_users"
-            android:exported="true"
-            android:theme="@style/noActionTheme">
-            <!--    android:theme="@style/noActionTheme: quita la action bar/app bar -->
-
+            <!-- android:theme="@style/noActionTheme: quita la action bar/app bar -->
 
         </activity>
     </application>

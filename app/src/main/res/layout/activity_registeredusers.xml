@@ -4,15 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Registeredusers">
 
-    >
 
     <ImageView
+        android:id="@+id/tvFondo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/sky_users"
+
         android:scaleType="centerCrop"
+
         />
+    <!--android:src="@drawable/users_background"-->
     <androidx.cardview.widget.CardView
         android:id="@+id/cd1"
         android:layout_width="370dp"
@@ -85,4 +88,5 @@
             android:fontFamily="@font/notosans_bold"
             android:text="Nombre: Antonio Gonzalez.\n Edad: 28 años\n Nacionalidad: España.\nCalle: Calle Alcocer" />
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
