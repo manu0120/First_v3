@@ -4,6 +4,15 @@ Se trata de una aplicación en la que los usuarios podrán gestionar de manera m
 eficiente su tiempo y dividir sus tareas a través de multiples tareas. Asimismo
 los usuarios podrán disfrutar de mayor cantidad de tiempo libre.
 
+### Estructura de la aplicacion
+
+![Estructura](img/estructura.PNG)
+
+### Network graph
+
+En este gráfico se puede ver las ramas de desarrollo que se han ido creando durante el proyecto.
+
+![Graph](img/network_graph.PNG)
 ### Icono de la aplicación
 
 ![Logo](img/logo_aplicacion.png)
