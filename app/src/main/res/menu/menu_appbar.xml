@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/item1"
@@ -12,8 +13,8 @@
         android:icon="@drawable/ic_settings"
         app:showAsAction="ifRoom|withText" />
 
-    <!-- Los dos item ultimos se muestran en el menu overflow ya que android determina
-    que no hay mas espacio en la barra-->
+    <!-- Los dos item ultimos se muestran en el menu overflow
+    ya que android determina que no hay mas espacio en la barra-->
     <item
         android:id="@+id/item3"
         android:title="About us"

@@ -11,9 +11,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -26,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-        TextView mycontext= (TextView) findViewById(R.id.textTap);
-        registerForContextMenu(mycontext);
-        */
+        //las dos lineas de abajo estaban comentadas (para cuando no se quiera usar el ContextMenu)
+        /*TextView mycontext= (TextView) findViewById(R.id.textTap);
+        registerForContextMenu(mycontext);*/
 
+        //asignar a swipelayout y mivisorWeb el control diseñado en el layout
         /*
         cast al layout SwipeRefresh con el que rodeamos la vista en el
         xml y le colocamos un listener
@@ -53,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setMessage("Where do you go?");
         builder.setIcon(R.drawable.ic_settings);
         builder.setCancelable(false);
-
         // un XML a medida para el diálogo
 //        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
 
@@ -68,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
         builder.setNegativeButton("Login", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-
         builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -90,11 +89,9 @@ public class MainActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
         });
-
         // create and show the alert dialog
         AlertDialog dialog = builder.create();
         dialog.show();
-
     }
 
     protected SwipeRefreshLayout.OnRefreshListener
@@ -109,19 +106,20 @@ public class MainActivity extends AppCompatActivity {
             swipeLayout.setRefreshing(false);
         }
     };
+
+    //método que se usa para crear el menú
     public void onCreateContextMenu(ContextMenu menu, View v,
                                     ContextMenu.ContextMenuInfo menuInfo) {
 
-        getMenuInflater().inflate(R.menu.menu_context, menu);
+        //getMenuInflater().inflate(R.menu.menu_context, menu);
 
-        /*
-        super.onCreateContextMenu(menu, v, menuInfo);
+        //las tres lineas de abajo estaban comentadas (si no se quiere usar el ContextMenu)
+        /*super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_context, menu);
-         */
+        inflater.inflate(R.menu.menu_context, menu);*/
     }
 
-
+    //metodo que se usa para responder a los eventos de las opciones
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch(item.getItemId()){
@@ -192,3 +190,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
