@@ -184,6 +184,10 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Registeredusers.class);
             startActivity(intent);
         }
+        if (id == R.id.item6){
+            Intent intent = new Intent(MainActivity.this, BotAppBar.class);
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
 
     }
